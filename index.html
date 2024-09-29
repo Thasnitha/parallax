@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+     <img id="bg" src="./IMAGES/background.jpg" alt="">
+     <img id="moon" src="./IMAGES/moon-removebg-preview.png" alt="">
+     <img id="mountain" src="./IMAGES/mountain-removebg-preview.png" alt="">
+     <img id="road" src="./IMAGES/road-removebg-preview.png" alt="">
+     <h2  id="text">Moon Light</h2>
+    </section>
+   <div class="section2">
+    <h1>Parallax Scrolling</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, tempore voluptates harum suscipit quis dolorem provident unde officiis eum eos cumque! Quisquam  labore ullam totam neque obcaecati asperiores, id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis architecto numquam odio aperiam quae tempore fugiat, quod nam deleniti reprehenderit laborum consectetur! Adipisci voluptate consequuntur minima optio, minus esse!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis autem commodi repellat impedit possimus pariatur libero voluptatum magnam tempora. Recusandae architecto delectus eius, illo vero impedit sequi quos est?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium magnam iste omnis ad magni quos pariatur quod eum veniam autem beatae quas molestias facilis exercitationem, veritatis impedit amet ut natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem animi neque dicta nostrum velit tempore eius repellat numquam adipisci rem! Accusamus officia fugit quibusdam rem amet, sequi voluptatum voluptates expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eos consectetur nam, harum quisquam dolore quasi aut ipsa culpa omnis dolor architecto repellendus libero ab nemo cum, minima, aperiam accusamus!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, tempore voluptates harum suscipit quis dolorem provident unde officiis eum eos cumque! Quisquam  labore ullam totam neque obcaecati asperiores, id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis architecto numquam odio aperiam quae tempore fugiat, quod nam deleniti reprehenderit laborum consectetur! Adipisci voluptate consequuntur minima optio, minus esse!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis autem commodi repellat impedit possimus pariatur libero voluptatum magnam tempora. Recusandae architecto delectus eius, illo vero impedit sequi quos est?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium magnam iste omnis ad magni quos pariatur quod eum veniam autem beatae quas molestias facilis exercitationem, veritatis impedit amet ut natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem animi neque dicta nostrum velit tempore eius repellat numquam adipisci rem! Accusamus officia fugit quibusdam rem amet, sequi voluptatum voluptates expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eos consectetur nam, harum quisquam dolore quasi aut ipsa culpa omnis dolor architecto repellendus libero ab nemo cum, minima, aperiam accusamus!</p><br>
+   </div>
+</body>
+<script>
+    let bg=document.getElementById("bg")
+    let moon=document.getElementById("moon")
+    let mountain=document.getElementById("mountain")
+    let road=document.getElementById("road")
+    let text=document.getElementById("text")
+
+window.addEventListener('scroll',function(){
+    var value=window.scrollY;
+    bg.style.top=-value *0.5+'px';
+    moon.style.left=value *0.5+'px'
+    mountain.style.top=-value*0.15+'px'
+    text.style.top=value *1+'px'
+
+})
+
+</script>
+</html>
